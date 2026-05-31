@@ -64,6 +64,12 @@ PATCHES: List[Tuple[str, str, str, str]] = [
         "agent_conversation_loop.py",
         "Conversation loop: per-turn TF-IDF memory injection",
     ),
+    (
+        "banner",
+        "hermes_cli/banner.py",
+        "hermes_cli_banner.py",
+        "Banner: show 'Optimized with <3'",
+    ),
 ]
 
 NEW_FILES: List[Tuple[str, str]] = [
