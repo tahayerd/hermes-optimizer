@@ -308,6 +308,7 @@ def build_system_prompt_parts(agent: Any, system_message: Optional[str] = None) 
                 mem_block = agent._memory_store.format_for_system_prompt("memory")
                 if mem_block:
                     volatile_parts.append(mem_block)
+            # USER.md is always included when enabled.
             if agent._user_profile_enabled:
                 user_block = agent._memory_store.format_for_system_prompt("user")
                 if user_block:
